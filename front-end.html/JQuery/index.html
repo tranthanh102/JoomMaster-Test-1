@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JQuery</title>
+    <style>
+        .red {
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is text</p>
+    <p id="content">Tran Tuan Thanh DH Thuy Loi</p>
+    <button class="btn">hide text</button>
+    <button class="btn-show-hide">button</button>
+    <input type="text">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".btn").click(function() {
+                alert("Hello my name is Thành")
+            })
+            $(".btn-show-hide").click(function() {
+                    $("input").val('Trần Tuấn Thành')
+                })
+                //     $("#content").hover(function() {
+                //         alert($(this).text())
+                //     })
+                //     $("login").focus(function() {
+                //         $(this).addClass("red");
+                //     })
+                //     $("#content").click(function() {
+                //         $(this).toggleClass("red")
+                //     })
+                // $("#content").click(function() {
+                //     $(this).css("color", "blue")
+                // })
+        });
+    </script>
+</body>
+
+
+</html>
